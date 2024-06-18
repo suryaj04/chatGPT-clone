@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGpt clone</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" href="ChatGPT-5.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="flex">
+        <!-- Side bar -->
+        <div id="sideBar"  class="hidden sm:block w-[260px] transition-[1]  bg-[#171717] h-screen">
+            <div class="flex items-center sticky py-[12.5px]  px-5 top-0 justify-between">
+                <button onclick="closeSideBar()"><img src="sidebar close.svg" alt=""></button>
+               <button><img src="sidebar edit.svg" alt=""></button>
+            </div>
+            <div class="mt-[40px] text-white ">
+                <p class="px-5 text-[12px] font-normal text-white">Today</p>
+                <div class="w-[220px] mx-3 mt-2 px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 tracking-tighter text-sm">Change website icon HTML</button>
+                    <img src="dot.svg" alt="">
+                </div>
+                <div class="mx-3 w-[220px] px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Find object in Array</button>
+                    <img src="dot.svg" alt="">
+                </div>
+                <div class="mx-3 w-[220px] px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Find object in Array</button>
+                    <img src="dot.svg" alt="">
+                </div>
+            </div>
+            <div class="mt-9">
+                <p class="px-5 text-[12px] font-normal text-white">Yesterday</p>
+                <div class="w-[220px] mx-3 mt-2 px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Magic Slides App</button>
+                    <img src="dot.svg" alt="">
+                </div>
+            </div>
+            <div class="mt-9">
+                <p class="px-5 text-[12px] font-normal text-white">Previous 7 Days</p>
+                <div class="w-[220px] mx-3 mt-2 px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Floating Point Precision</button>
+                        <img src="dot.svg" alt="">
+                </div>
+                <div class="w-[220px] mx-3  px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Front-End Developer Skills</button>
+                        <img src="dot.svg" alt="">
+                </div>
+                <div class="w-[220px] mx-3  px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Channa Protein Content</button>
+                        <img src="dot.svg" alt="">
+                </div>
+                <div class="w-[220px] mx-3  px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Image not showing error</button>
+                        <img src="dot.svg" alt="">
+                </div>
+            </div>
+             <div class="mt-9">
+                <p class="px-5 text-[12px] font-normal text-white">Previous 30 Days</p>
+                <div class="w-[220px] mx-3 mt-2 px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Movie Details API</button>
+                        <img src="dot.svg" alt="">
+                </div>
+                <div class="w-[220px] mx-3  px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Incremental Counter Fix</button>
+                        <img src="dot.svg" alt="">
+                </div>
+                <div class="w-[220px] mx-3  px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">API: Interoperability</button>
+                        <img src="dot.svg" alt="">
+                </div>
+                <div class="w-[220px] mx-3  px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Centering Flex Container</button>
+                        <img src="dot.svg" alt="">
+                </div>
+                <div class="w-[220px] mx-3  px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Incrementing Counter Issue</button>
+                        <img src="dot.svg" alt="">
+                </div>
+                <div class="w-[220px] mx-3  px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Check Input for Words</button>
+                        <img src="dot.svg" alt="">
+                </div>
+                <div class="w-[220px] mx-3  px-1 text-start rounded-md hover:bg-[#212121] flex items-center justify-between ">
+                    <button class="text-white px-1 py-2 text-sm">Button Clicked Text Fix.</button>
+                        <img src="dot.svg" alt="">
+                </div>
+                
+            </div>
+            <div class="flex px-2 py-4 hover:bg-[#212121] rounded-md w-[230px] bottom-0 fixed items-center gap-2 mx-4">
+                <img src="upgrade.svg" alt="">
+                <div class="text-white">
+                    <h1 class="text-sm">Upgrade Plan</h1>
+                    <p class="text-white text-sm">Get GPT-4, DALL·E, and more</p>
+                </div>
+            </div>
+        </div>
+        <!-- Main Screen -->
+        <div class="w-full sm:w-[calc(100%-260px)] bg-[#212121] h-screen">
+            <div class="flex my-2 mx-3">
+                <button class="flex items-center gap-1 text-[#B4B4B4] font-semibold text-lg hover:rounded-md hover:bg-[#2F2F2F] px-3 py-1.5">ChatGPT<span><img src="arr.svg" alt=""></span></button>
+            </div>
+           <div class="mx-auto  w-[700px]">
+                <img src="ChatGPT-5.svg" class="text-center mx-auto  mt-[16%] mb-10" alt="">
+             <div class="flex justify-center gap-2">
+                <div class="border rounded-xl hover:bg-[#2F2F2F] w-[150px] p-3 border-gray-700">
+                    <img src="img.svg">
+                    <h1 class="text-white">Thank my interviewer</h1>
+                </div>
+                <div class="border rounded-xl w-[200px] hover:bg-[#2F2F2F]  p-3 border-gray-700">
+                   <img src="kind.svg" alt="">
+                    <h1 class="text-white">Explain nostalgia to a kindergartener</h1>
+                </div>
+                <div class="border rounded-xl w-[200px] p-3 hover:bg-[#2F2F2F]  border-gray-700">
+                    <img src="personal.svg" alt="">
+                    <h1 class="text-white">Make me a personal webpage</h1>
+                </div>
+                <div class="border rounded-xl w-[150px] p-3 hover:bg-[#2F2F2F]  border-gray-700">
+                    <img src="kids.svg" alt="">
+                    <h1 class="text-white">What to do with kids' art</h1>
+                </div>
+             </div>
+           </div>
+           <div>
+           <div class="right-[23%] fixed bottom-3">
+            <input type="text" placeholder="Message ChatGPT" class="w-[750px] bg-[#2F2F2F] focus:outline-none text-[#9B9B9B] p-4 rounded-full">
+            <p class="text-[#9B9B9B] text-center text-sm mt-2">ChatGPT can make mistakes. Check important Info</p>
+           </div>
+           </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
